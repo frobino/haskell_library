@@ -1,0 +1,29 @@
+NOTE:
+	- all datatypes names start with Capital letter
+
+* Char
+* String
+* Bool
+* Int (32 bit on 32 bit machines, 64 on 64 bits...)
+* Integer (Unbounded size. More expensive than Int but never ovf)
+* Double (typically 64 bits)
+
+* Maybe (with Just and Nothing)
+  to use maybe we define a variable with Just, e.g:
+  let v = Just "something"
+  in this way v can be a [Char] or Nothing
+
+* lists:
+  [1,2,3,4]
+  ['h','i']
+  "hi"
+* tuples
+  (True, "hello")
+
+FUNCTION OVER LISTS:
+* head
+* tail
+* drop
+* fst
+* snd
+  
