@@ -1,0 +1,4 @@
+-- lines is a build in function used to split a string on \n or \r
+--
+-- Usage:
+--   ghci> lines "line 1\nline 2"
