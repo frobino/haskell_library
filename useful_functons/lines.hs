@@ -2,3 +2,5 @@
 --
 -- Usage:
 --   ghci> lines "line 1\nline 2"
+--
+-- The opposite function is called unlines

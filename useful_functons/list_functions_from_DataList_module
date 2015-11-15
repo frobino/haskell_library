@@ -1,0 +1,60 @@
+All the following functions on lists require the Data.List module (they are not loaded by default,
+differently from Prelude).
+
+How long is a list?
+* length
+
+Is a list empty?
+* null
+
+Access the 1st element
+* head
+
+Access the last element
+* last
+
+Return all but the 1st element
+* tail
+
+Retun all but the 1st element
+* init
+
+Append a list at the bottom of another list
+* ++
+
+Concatenate a list of list of the same type to a single list
+* concat
+
+Reverse items in list
+* reverse
+
+"And" a list of bool
+* and
+
+"Or" a list of bool
+* or
+
+All items in a list return true from a common function?
+* all
+
+At least one item in a list return true from a common function?
+* any
+
+Return the first N elements of a list
+* take
+
+Return a list without the first N elements
+* drop
+
+Return 2 lists from a single list, breaking the list at index N
+* splitAt
+
+As long as a function returns true, apply take
+* takeWhile
+
+As long as a function returns true, apply drop
+* dropWhile
+
+* span
+
+* break

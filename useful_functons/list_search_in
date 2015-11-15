@@ -1,0 +1,8 @@
+Is an element present in a list?
+* elem
+
+Is an element not present in a list?
+* notElem
+
+Apply a function on each element of a list, and return a list composed by elements who returned true
+* filter

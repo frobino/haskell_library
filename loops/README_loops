@@ -1,0 +1,41 @@
+-----------------------------------------------------------------------------------------------
+-- LOOPS KIND IN HASKELL
+-----------------------------------------------------------------------------------------------
+
+All loops in Haskell can be decribed through recursion and an eventual accumulator, to replace
+the "i" accumulator.
+
+However, it is better to "avoid" explicit recursion as much as possible.
+It is reccomended to use the constructs that Haskell provides to solve the most common kind of
+loops:
+
+  * map:
+    useful for embarassingly parallel loops. "map" takes a function and applies it to all
+    elements of a list.
+
+  * filter:
+    go through a list (for loop) and search (return) elements which satisfy a specific criteria
+
+  * fold (foldl and foldr):
+    do something to every element of a list, one element after the other. While we do it, we
+    update an accumulator using some kind of logic, and at the end we return the accumulator.
+    E.g. go thorugh each element of a list and depending on the value of the element decide
+    what to do...
+
+In all other cases (or when we cannot recognize/apply one of the 3 functions described above),
+we can use recursion + accumulator.
+
+-----------------------------------------------------------------------------------------------
+-- WHY HASKELL HAS NO LOOPS?
+-----------------------------------------------------------------------------------------------
+
+Haskell is a DECLARATIVE language => does not require loops.
+
+Declarative vs Imperative:
+
+	* DECLARATIVE language: describe WHAT to do => does not require loops
+
+	* IMPERATIVE language: describe HOW to do something => requires loops
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------

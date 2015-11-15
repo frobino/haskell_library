@@ -1,0 +1,5 @@
+These two functions are used to work with several list at once:
+
+> zip [1,2,3] "zip"
+
+> zipWith + [1,2,3] [4,5,6]
