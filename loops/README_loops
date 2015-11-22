@@ -10,17 +10,27 @@ It is reccomended to use the constructs that Haskell provides to solve the most 
 loops:
 
   * map:
+    map :: (a -> b) -> [a] -> [b]
     useful for embarassingly parallel loops. "map" takes a function and applies it to all
     elements of a list.
 
   * filter:
+    filter :: (a -> Bool) -> [a] -> [a]
     go through a list (for loop) and search (return) elements which satisfy a specific criteria
 
   * fold (foldl and foldr):
+    foldr :: (a -> b -> b) -> b -> [a] -> b
     do something to every element of a list, one element after the other. While we do it, we
     update an accumulator using some kind of logic, and at the end we return the accumulator.
     E.g. go thorugh each element of a list and depending on the value of the element decide
     what to do...
+    
+    NOTE: fold is very powerful and differs from filter in the sense that:
+    	  - filter goes through list, and evaluates all elements of the input list thorugh a
+	    Bool function. If the function returns True, it ADDs the elem to the returned list.
+	  - fold goes through list, and evaluates all elements of the input list thorugh a
+	    custom function, which uses the accumulator and returns the same type of the accumulator.
+	    In addition, fold does not return a list, but a single element. 
 
 In all other cases (or when we cannot recognize/apply one of the 3 functions described above),
 we can use recursion + accumulator.

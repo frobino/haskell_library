@@ -19,3 +19,6 @@ square_map xs = map square' xs
 square_recurse :: [Double] -> [Double]
 square_recurse [] = []
 square_recurse (x:xs) = x*x : square_recurse xs
+
+-- NOTE:
+-- map is a HIGH ORDER FUNCTION, bacause it is a function which takes a function as an argument
