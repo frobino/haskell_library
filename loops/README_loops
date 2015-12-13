@@ -48,4 +48,20 @@ Declarative vs Imperative:
 	* IMPERATIVE language: describe HOW to do something => requires loops
 
 -----------------------------------------------------------------------------------------------
+-- NOTE THE IMPORTANCE OF step FUNCTIONS IN HASKELL LOOPS
+-----------------------------------------------------------------------------------------------
+
+Examples:
+dlts :: String -> [String]
+dlts = foldr step [] . lines -- note [] is the initial value for the accumulator in foldr
+  where step firstline accumulator
+          | "#define DLT_" `isPrefixOf` firstline = secondWord firstline : accumulator
+          | otherwise = accumulator
+        secondWord = head . tail . words -- function to return the 2nd word inside of 1st_line,
+                     -- for example, if 1st_line is "#define DLT_1 1 /'define #1", it returns
+                     -- DLT_1
+-- *Main> dlts "#define HA 1 // random\n#define DLT_2 2 /'define #2*/\n"
+-- ["DLT_2"]
+
+-----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
