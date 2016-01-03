@@ -1,0 +1,1 @@
+(truncate n) -- tuncate function turns a float or a rational into int dropping the digits after the decimal point
