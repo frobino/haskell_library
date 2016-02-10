@@ -1,3 +1,8 @@
+----------------------------------------------------------------------------------------------------------
+-- This file contains the definition of a new datatype JValue, and a set of functions that
+-- reads a Jvalue and return a standard Haskell datatype
+----------------------------------------------------------------------------------------------------------
+--
 -- A module let us determine which names inside the module are ACCESSIBLE from other modules
 module SimpleJSON -- module name
     (
@@ -22,7 +27,7 @@ data JValue = JString String -- constructor #1
             | JArray [JValue]
               deriving (Eq, Ord, Show)
 
--- The following functions take a "standard" haskell datatype and transform it to JValue:
+-- The following functions take a JValue and return it as a "standard" hHskell datatype:
 --
 getString :: JValue -> Maybe String
 getString (JString s) = Just s

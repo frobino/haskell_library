@@ -1,0 +1,6 @@
+The goal of this project is to:
+  - create a JValue datatype in haskell that can represent JSON data (SimpleJSON.hs)
+  - create functions that RENDER (print out in a friendly way) the JValue datatype
+    * simple render: PutJSON.hs
+    * elaborated renderer: PrettyJSON.hs + PrettyStub.hs + Prettify.hs
+    Use only one of the 2 files at the time.
