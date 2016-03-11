@@ -1,6 +1,8 @@
 ----------------------------------------------------------------------------------------------------------
 -- This file contains a funtion that act as a RENDERER for JValues, e.g. it
 -- gets a JValue as input and it PRINT it out in a human friendly way
+--
+-- This file is the "simple version" of a renderer. See PrettyJSON.hs for a more complex version.
 ----------------------------------------------------------------------------------------------------------
 --
 module PutJSON where

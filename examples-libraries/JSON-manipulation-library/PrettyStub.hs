@@ -1,5 +1,5 @@
--- This file will become Prettify.hs, which is the library including functions to render (print out in a
--- nice way) our custom type JValue which we will use in PrettyJSON.hs
+-- This file will become PrettyJSON.hs, which is the library including functions to render (print out in a
+-- nice way) our custom type JValue.
 --
 -- This file is left as it is to show how to create a SKELETON for a file that compiles.
 --
