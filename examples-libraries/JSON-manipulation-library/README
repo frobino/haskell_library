@@ -1,6 +1,11 @@
 The goal of this project is to:
   - create a JValue datatype in haskell that can represent JSON data (SimpleJSON.hs)
   - create functions that RENDER (print out in a friendly way) the JValue datatype
-    * simple render: PutJSON.hs
-    * elaborated renderer: PrettyJSON.hs + PrettyStub.hs + Prettify.hs
-    Use only one of the 2 files at the time.
+    * derive JValue from Show and use the "print" function: Makefile (Main.hs + SimpleJSON.hs) 
+    * simple renderer: PutJSON.hs (execute through ghci :l)
+    * elaborated renderer: PrettyJSON.hs + Prettify.hs (execute through ghci :l)
+
+NOTEs:
+    - Use only one of the 2 renderers at the time, cannot be used both contemporary.
+    - PrettySTUB.hs is a stub file which will become Prettify.hs.
+      PrettySTUB.hs is left just to show how to use "undefined" values.  
